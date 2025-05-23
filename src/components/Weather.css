@@ -21,9 +21,6 @@
     box-sizing: border-box;
 
 }
-.container, .weather {
-  background-color: #2f4680;
-}
 
 .search-bar
 {
