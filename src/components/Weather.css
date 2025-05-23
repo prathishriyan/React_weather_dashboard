@@ -1,12 +1,16 @@
 
 .container {
-    width: 100%;
+    width: 100vw;
+     min-height: 100vh;
     max-width: 500px;
-    margin: auto;
+    margin:0 auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .weather{
+     width: 100%;
+  min-height: 400px;
     place-self: center;
     padding: 40px;
     border-radius: 10px;
@@ -14,8 +18,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 
 }
+.container, .weather {
+  background-color: #2f4680;
+}
+
 .search-bar
 {
     display: flex;
@@ -99,7 +108,7 @@
 
 
 
-/*
+
 
 @media (max-width: 600px) {
     .temperature {
@@ -118,6 +127,7 @@
     .search-bar input,
     .search-bar img {
         width: 100%;
+        height: 45px;
     }
 
     .weather-data {
@@ -128,5 +138,6 @@
     .weather-data .col {
         justify-content: center;
         text-align: center;
+         min-width: 100%;
     }
-}*/
+}
